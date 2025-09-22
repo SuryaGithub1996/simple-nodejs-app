@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --ci --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml
+        run: npm test -- --ci --reporters=default --reporters=jest-junit  #npm test -- --ci --reporters=default --reporters=jest-junit --outputFile=test-results/junit.xml
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
